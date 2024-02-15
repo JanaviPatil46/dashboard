@@ -315,8 +315,8 @@ html {
  .sidebar3 {
   position: fixed;
   top: 0;
-  width: 16.66%;
-  left: -16.66%;
+  width: 200px;
+  left: -200px;
   height: 100%;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -415,17 +415,14 @@ border-radius: 6px;
 hr{
   margin-top: 10px;
 }
-@media screen and (max-width: 480px) {
-/* .sidebar3{
-  width: 41.66%;
-} */
-}
+
 
 /* search sidebar */
 .search-side {
   position: fixed;
   top: 0;
-  left:  -16.66%;
+  width: 200px;
+  left: -200px;
   height: 100%;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -482,11 +479,7 @@ hr{
   color: var(--text-color);
 }
 
-@media screen and (max-width: 480px) {
-  /* .search-side{
-    width: 50%;
-  } */
-  }
+
 
 
 
