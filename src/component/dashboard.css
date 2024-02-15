@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+
+.sidebar {
+  background-color: #d5db81;
+}
+.view {
+  background-color: #81bcdb;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+.header {
+  background-color: #d16169;
+  color: #ffffff;
+  padding: 15px;
+  
+}
+
+
+
+.menu .card {
+  background-color: #9933cc;
+  height: 150px;
+}
+.menu .status {
+  background-color: #96a8b2;
+  height: 700px;
+}
+.menu_2 {
+  background-color: #9933cc;
+}
+.menu .S {
+  background-color: #d5db81;
+  height: 600px;
+}
+.title{
+  text-align: center;
+
+}
+.info{
+  margin-top: 30px;
+ text-align: start;
+}
+.info .btn{
+  align-items: start;
+  margin-top: 15px;
+  
+}
+.hoverButton {
+  position: relative;
+  /* padding: 10px 20px; */
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hoverButton:hover {
+  background-color: #2980b9;
+  
+}
+
+.tooltip {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hoverButton:hover .tooltip {
+  opacity: 1;
+}
+.menu .tables{
+background-color: #6956d4;
+height: 500px;
+}
+.table-container {
+  overflow-x: auto;
+ 
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+/* tr:nth-child(even) {background-color: #f2f2f2;} */
+tr:hover{
+  background: #5b5858;
+}
+th {
+  background: #fafafa;
+}
+.action{
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  .menu .status {
+    background-color: #96a8b2;
+    height: 2100px;
+  }
+  .info{
+      display: flex;
+  }
+  .table-container {
+      overflow-x: auto;
+     
+    }
+    table{
+      width: 100%;
+    }
+}

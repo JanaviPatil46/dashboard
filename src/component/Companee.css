@@ -1,0 +1,276 @@
+.main-class {
+    margin: 40px auto 30px;
+    overflow: initial;
+    width: 100%;
+    padding: 0px 25px;
+    max-width: none;
+    position: fixed;
+  }
+  
+  .whitebox-shadow {
+    margin: 30px auto;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .page_header {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.88);
+    font-size: 14px;
+    line-height: 1.5714285714285714;
+    list-style: none;
+    position: relative;
+    background-color: transparent;
+    padding-block: 6px;
+    padding-inline: 16px;
+  }
+  
+  .page_header .page-heading {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .page_header .header-container {
+    display: flex;
+    align-items: center;
+    margin-block: 4px;
+    margin-inline-end: 0;
+    margin-inline-start: 0;
+    overflow: hidden;
+  }
+  
+  .back-button {
+    margin-inline-end: 16px;
+    font-size: 16px;
+    line-height: 1;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.88);
+    outline: none;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  .Company-list-title {
+    margin-inline-end: 12px;
+    margin-block-end: 0;
+    color: rgba(0, 0, 0, 0.88);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .page_header.buttons-container {
+    margin-block: 4px;
+    margin-inline-end: 0;
+    margin-inline-start: 0;
+    white-space: nowrap;
+  }
+  
+  .button1 .Refresh {
+    border: 1px solid black;
+    background-color: #ffffff;
+    border-radius: 6px;
+    font-size: 14px;
+    height: 32px;
+    padding: 4px 15px;
+    cursor: pointer;
+    border-color: #d9d9d9;
+    color: rgba(0, 0, 0, 0.88);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02);
+  }
+  .Refresh {
+    outline: none;
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: center;
+    background: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    color: rgba(10, 2, 2, 0.88);
+    margin: 10px;
+  }
+  
+  .Refresh:hover {
+    color: blue;
+    border: 1px solid blue;
+  }
+  
+  .button2 .Add-New-Company {
+    color: #fff;
+    background: #1640d6;
+    box-shadow: 0 2px 0 rgba(5, 95, 255, 0.1);
+    font-size: 14px;
+    height: 32px;
+    padding: 4px 15px;
+    border-radius: 6px;
+  }
+  .Add-New-Company {
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: center;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    margin: 10px;
+  }
+  
+  .Add-New-Company:hover {
+    background-color: #6987f5;
+  }
+  
+  .buttons-container {
+    display: flex;
+    margin-left: 400px;
+  }
+  
+  /* CSS for form */
+  
+  .form-container {
+    position: fixed;
+    top: 0;
+    right: -400px; 
+    width: 400px;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    transition: right 0.3s ease-in-out;
+  }
+  
+  .form-open {
+    right: 0;
+  }
+  
+  .form-container .header {
+    display: flex;
+    flex: 0;
+    align-items: center;
+    padding: 16px 24px;
+  
+    font-size: 16px;
+    line-height: 1.5;
+    border-bottom: 1px solid rgba(5, 5, 5, 0.06);
+  }
+  .form-container .header_title {
+    display: flex;
+    flex: 1;
+    align-items: center;
+  }
+  .header_title button {
+    display: inline-block;
+    margin-inline-end: 12px;
+    color: rgba(0, 0, 0, 0.45);
+    font-weight: 600;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 1;
+    text-align: center;
+    text-transform: none;
+    text-decoration: none;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: color 0.2s;
+    text-rendering: auto;
+  }
+  .title {
+    flex: 1;
+    margin: 0;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .content {
+    flex: 1;
+    min-width: 0;
+    min-height: 0;
+    overflow: auto;
+  }
+  
+  .simple-form {
+  
+    max-width: 380px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 60px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    color: rgba(0, 0, 0, 0.88);
+    font-size: 14;
+  }
+  
+  input,
+  textarea {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 10px
+  }
+  
+  
+  button {
+    color: #fff;
+    background: #1640d6;
+    font-size: 14px;
+    height: 32px;
+    padding: 4px 15px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .simple-form button:hover {
+    background-color: #6987f5;
+  }
+  .icon {
+    margin-inline-end: 4px;
+    color: #ff4d4f;
+    font-size: 14px;
+    line-height: 1;
+  }
+  
+  .Countries {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  @media only screen and (max-width: 600px) {
+   .header-container{
+    width: 100%;
+   }
+     
+    .buttons-container {
+      margin-left: 0px;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      margin: 5px;
+      justify-content: space-between;
+    }
+  
+    .button1 .Refresh,
+    .button2 .Add-New-Company {
+      margin: 10px 5px;
+      
+    }
+  }
+  

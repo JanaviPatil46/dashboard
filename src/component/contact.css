@@ -1,0 +1,83 @@
+.contact-container {
+    border: 1px solid black;
+    height: 100vh;
+    flex-direction: column;
+    position: fixed;
+}
+
+.con-header {
+    border: 1px solid goldenrod;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    background: rgb(204, 203, 203);
+}
+
+.con-header .name-title {
+    font-size: 18px;
+    font-weight: 450;
+}
+
+.con-header .cancle-btn {
+    border: none;
+    color: blue;
+    font-size: 20px;
+    background: none;
+}
+
+.form-fields {
+    margin: 10px;
+}
+
+.form-container {
+    border: 1px solid brown;
+    margin: 50px 0 0 0;
+}
+
+.form-container h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.form-container .fields-one {
+    display: flex;
+    gap: 30px;
+    margin: 20px 0 0 0;
+}
+
+.fields-one .f-name,
+.fields-one .m-name,
+.fields-one .l-name,
+.contact-name,
+.company-name,
+.company-note,
+.company-ssn,
+.company-email,.tags .l-name {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 10px 0 px 10px;
+    color: rgb(119, 119, 119);
+}
+
+.fields-one input,
+.contact-name input,
+.company-name input,
+.company-note input,
+.company-ssn input,
+.company-email input,.tags-options {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.contact-name {
+    margin: 20px 0 20px 0;
+}
+
+.company-name,
+.company-ssn,
+.company-email,
+.company-note {
+    margin: 0 0 20px 0;
+}
