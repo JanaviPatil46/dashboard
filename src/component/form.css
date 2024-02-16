@@ -1,0 +1,29 @@
+.contact-form-container {
+    position: fixed;
+    top: 0;
+    right: -400px; /* Initial position outside the screen */
+    bottom: 0;
+    width: 400px;
+    background-color: white;
+    transition: right 0.3s ease;
+  }
+  
+  .contact-form-container.visible {
+    right: 0; /* Move the form into view */
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  }
+  
+  .contact-form {
+    padding: 20px;
+  }
+  
+  /* Style your button however you want */
+  

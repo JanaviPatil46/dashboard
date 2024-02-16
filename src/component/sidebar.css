@@ -92,7 +92,7 @@ html {
 .sidebar .toggle {
   /* margin-top: 10px; */
   margin-left: 15.5%;
-  top: 45px;
+  top: 80px;
   position: absolute;
   transform: translateY(-50%) rotate(0deg);
   height: 25px;
@@ -306,6 +306,7 @@ html {
    width: 16.66%;
   }
  
+  
 }
 
 
@@ -517,6 +518,7 @@ hr{
   display: flex;
   flex: 1;
   align-items: center;
+ 
 }
 .header_title button {
   display: inline-block;
@@ -536,8 +538,51 @@ hr{
   transition: color 0.2s;
   text-rendering: auto;
 }
+.header_title .title{
+  /* border: 1px solid black; */
+  margin-top: 15px;
+}
+.form-container .c-contact{
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+ 
+  height: auto;
+  padding: 10px;
+}
+.form-container .company-contact{
+  align-items: center;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+  padding: 10px;
+}
 
+.company-contact .name-container{
+  /* border: 1px solid blueviolet; */
+  height: 90px;
+}
+.name-container label{
+margin: 10px;
+font-size: 16px;
+}
+.name-container input[type="text"],
+input[type="email"]{
+height: 48px;
+border-radius: 15px;
+border: none;
+margin-top: 5px;
+padding: 15px;
+font-size: 15px;
+background-color: #eef1f4;
+}
 
+.company-contact .submit-btn{
+  /* margin-left: 30%; */
+  padding: 8px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background: #007bff;
+}
 
 /* .............................................................. */
 .account-container {
@@ -589,166 +634,106 @@ hr{
   transition: color 0.2s;
   text-rendering: auto;
 }
+/* ....account... */
 
-/* newaccount.css */
-.new-account-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh; /* Change to min-height */
-}
-
-
-.new-account-form {
-  width: 100%;
-  max-width: 600px;
-  padding: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-}
-
-.error-message {
-  color: red;
-  font-size: 0.8rem; 
- text-align: left;
-}
-
-.new-account-form h2 {
-  text-align: left;
-  color: #333;
-  font-size: 20px;
-}
-
-.form-toggle {
-  display: flex;
-  justify-content: space-between;
-}
-
-.form-toggle button {
-  flex-grow: 1;
-  padding: 5px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  gap: 10px;
-}
-
-.form-toggle button.active {
-  background-color: #007bff;
-  color: white;
-}
-
-.form-content {
-  margin-top: 5px;
-}
-
-.radio-row {
-  display: flex;
-  justify-content: left;
-}
-
-.radio-label1,
-.radio-label2 {
-  display: flex;
-  align-items: center;
-  margin-right: 20px;
+.account-container2 {
+  box-shadow: 5px 5px 5px rgb(184, 185, 185);
+  height: auto;
   flex-direction: column;
 }
 
-.radio-label:last-child {
-  margin-right: 0; /* Remove margin from the last radio label */
-}
-
-.radio-label1 input,
-.radio-label2 input[type="radio"] {
-  margin-right: 5px;
-}
-
-.act_name,
-.com_name {
-  margin-bottom: 5px;
-}
-
-.act_name input,
-.com_name input {
-  width: 100%;
-  box-sizing: border-box;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.grp_country label {
-  color: #525252;
-}
-
-.grp_country {
+.account-header {
   display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-.grp-address {
-  margin-bottom: 10px;
-}
-
-.grp-address label {
-  margin-bottom: 10px;
-  display: block;
-  color: #525252;
-}
-
-.grp-address input[type="text"],
-.grp_country .react-select__control {
-  width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
+  justify-content: space-between;
+  background: rgb(243, 243, 243);
 }
 
-/* Responsive Styles */
+.account-header .account_title {
+  font-size: 18px;
+  font-weight: 450;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  width: 85%;
+  float: left;
+  cursor: pointer;
+}
+
+.account-header .header-button {
+  background: none;
+  color: rgb(58, 145, 245);
+  border: none;
+  width: 15%;
+  float: left;
+  cursor: pointer;
+}
+
+.account_type {
+  height: auto;
+  flex-direction: row;
+}
+
+.accounttype_container {
+  height: auto;
+  flex-direction: column;
+}
+
+.sub-account {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: space-between;
+  height: 30%;
+
+}
+
+.account_info {
+
+  flex-direction: column;
+  display: flex;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  font-size: 15px;
+  margin-bottom: 10px;
+
+}
+
+.account_info input[type=radio] {
+  cursor: pointer;
+
+}
+
+.rotate-btn {
+  border: none;
+  background: none;
+  color: rgb(121, 116, 116);
+  cursor: pointer;
+  padding-top: 5%;
+}
+
+.company_info {
+  flex-direction: column;
+  display: flex;
+  gap: 2px;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  font-size: 15px;
+  cursor: pointer;
+}
+.company_info input[type=radio]{
+  cursor: pointer;
+
+}
+
 @media screen and (max-width: 480px) {
-  .new-account-form {
-    max-width: 100%;
-    padding: 10px;
+  .sub-account {
+      flex-direction: column;
+      align-items: stretch;
   }
 
-  .form-toggle button {
-    padding: 8px;
+  .account_info {
+      margin-bottom: 10px;
   }
 
-  .act_name input,
-  .com_name input
-  {
-    font-size: 14px;
-    padding: 5px;
+  .rotate-btn {
+      padding-top: 5%;
   }
 
-  .grp-address label {
-    margin-bottom: 10px;
-  }
-
-  .radio-row {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .radio-label {
-    margin: 5px 0;
-  }
-
-  .error-message {
-    font-size: 0.7rem; 
-  }
-  .form-toggle {
-    flex-direction: column;
-  }
-
-  .form-toggle button {
-    margin-bottom: 10px;
-  }
 }
-
-/* @media screen and (max-width: 480px) {
-  
-} */

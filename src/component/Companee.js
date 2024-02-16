@@ -3,7 +3,7 @@ import { IoMdArrowBack } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
 import { FaStarOfLife } from "react-icons/fa6";
 
-import "./companee.css";
+import "./Companee.css";
 
 const Companee = () => {
     const [isFormOpen, setIsFormOpen] = useState(false);
@@ -44,7 +44,7 @@ const Companee = () => {
     };
 
     return (
-        <div className="form-open">
+        <div className={`companee-container ${isFormOpen ? "blur-background" : ""}`}>
             <div className="whitebox-shadow">
                 <div className="page_header">
                     <div className="page-heading">
