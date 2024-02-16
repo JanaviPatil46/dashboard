@@ -651,8 +651,8 @@ background-color: #eef1f4;
 
 .account-header .account_title {
   font-size: 18px;
-  font-weight: 450;
-  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  font-weight: 600;
+  font-family: sans-serif;
   width: 85%;
   float: left;
   cursor: pointer;
@@ -673,8 +673,9 @@ background-color: #eef1f4;
 }
 
 .accounttype_container {
-  height: auto;
-  flex-direction: column;
+  display: flex;
+  justify-content: center;
+
 }
 
 .sub-account {
@@ -690,11 +691,117 @@ background-color: #eef1f4;
 
   flex-direction: column;
   display: flex;
-  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-  font-size: 15px;
+  font-family: sans-serif;
+  font-size: 14px;
   margin-bottom: 10px;
 
 }
+
+.account_info input[type=radio] {
+  cursor: pointer;
+
+}
+
+.rotate-btn {
+  border: none;
+  background: none;
+  color: rgb(121, 116, 116);
+  cursor: pointer;
+  padding-top: 5%;
+}
+
+.company_info {
+  flex-direction: column;
+  display: flex;
+  gap: 2px;
+  font-family: sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.company_info input[type=radio] {
+  cursor: pointer;
+
+}
+
+.clienttype_container {
+  height: auto;
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.accountsub_type {
+  display: flex;
+}
+
+.type1_individual .companysub_type {
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.type1_individual input[type=radio] {
+  cursor: pointer;
+
+}
+
+.individual_input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  /* background-color:beige; */
+  height: auto;
+
+}
+
+.form-accountinfo{
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type=text],
+select {
+  width: 100%;
+  padding: 5px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=continue] {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #0054ad;
+}
+
+
+@media screen and (max-width: 480px) {
+  .sub-account {
+      flex-direction: column;
+      align-items: stretch;
+  }
+
+  .account_info {
+      margin-bottom: 10px;
+  }
+
+  .rotate-btn {
+      padding-top: 5%;
+  }
+
+}
+
 
 .account_info input[type=radio] {
   cursor: pointer;
